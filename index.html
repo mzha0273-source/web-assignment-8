@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Assignment</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<body></body>
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="Images/Logo.png" alt="logo" width="300" height="40" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            SHOP TEA
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            TEA GIFT
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                           HOME
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            CORPORATE
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            WHOLESALE
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <div class="cs-search">
+              <input type="search" placeholder="Search teas" id="tea-search"
+              aria-label="Search">
+            </div>
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="Images/tubiao1.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="Images/tubiao2.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="Images/tubiao4.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="Images/tubiao3.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+ <!-- ============================================ -->
+  <!--                    Main                      -->
+  <!-- ============================================ -->
+  <main>
+
+    <!-- Hero /  -->
+    <section id="hero-1619" class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <p class="cs-topper">Premium Tea Collection</p>
+          <h1 class="hero__title">Discover Your Perfect Tea</h1>
+          <p class="cs-text hero__text">
+            Explore our best-selling teas, gifts, and wholesale options for every occasion.
+          </p>
+
+          <div class="hero__actions">
+            <a class="hero__btn hero__btn--primary" href="#">Shop Tea</a>
+            <a class="hero__btn hero__btn--ghost" href="#">View Gifts</a>
+          </div>
+        </div>
+
+        <div class="hero__media" aria-hidden="true">
+          <img src="Images/1.jpg" alt="" decoding="async">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="home-products">
+      <div class="home-products__container">
+        <h2 class="home-products__title">Featured Teas</h2>
+        <p class="home-products__subtitle">Best sellers this week</p>
+
+        <div class="home-products__grid">
+          <a class="product-card" href="#" data-name="australian breakfast tea">
+            <img src="Images/2.png" alt="Australian Breakfast Tea" decoding="async">
+            <h3>Australian Breakfast Tea Tea</h3>
+            <p>Fresh and light</p>
+          </a>
+
+          <a class="product-card" href="#" data-name="french earl grey tea">
+            <img src="Images/3.png" alt="French Earl Grey Tea" decoding="async">
+            <h3>French Earl Grey Tea</h3>
+            <p>Rich aroma</p>
+          </a>
+
+          <a class="product-card" href="#" data-name="organic relax tea">
+            <img src="Images/4.png" alt="Organic Relax Tea" decoding="async">
+            <h3>Organic Relax Tea</h3>
+            <p>Strong and smooth</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Categories ） -->
+    <section class="home-categories">
+      <div class="home-categories__container">
+        <h2 class="home-categories__title">Shop by Category</h2>
+
+        <div class="home-categories__grid">
+          <a class="category-card" href="#" data-name="Herbal">
+            <h3>Herbal</h3>
+            <p>Caffeine-free blends</p>
+          </a>
+          <a class="category-card" href="#" data-name="White Tea">
+            <h3>White Tea</h3>
+            <p>Delicate & floral</p>
+          </a>
+          <a class="category-card" href="#" data-name="Green Tea">
+            <h3>Green Tea</h3>
+            <p>Fresh & clean taste</p>
+          </a>
+          <a class="category-card" href="#" data-name="Black Tea">
+            <h3>Black Tea</h3>
+            <p>Bold & full-bodied</p>
+          </a><a class="category-card" href="#" data-name="Oolong Tea">
+            <h3>Oolong Tea</h3>
+            <p>Smooth & aromatic</p>
+          </a><a class="category-card" href="#" data-name="Fruit Tea">
+            <h3>Fruit Tea</h3>
+            <p>Sweet & refreshing</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About  -->
+    <section class="home-about">
+      <div class="home-about__container">
+        <div class="home-about__content">
+          <h2 class="home-about__title">Why TTree?</h2>
+          <p class="cs-text">
+            We source high-quality leaves and craft balanced blends for everyday moments.
+            Perfect for home, gifts, corporate, and wholesale.
+          </p>
+          <a class="home-about__btn" href="#">Learn More</a>
+        </div>
+
+        <div class="home-about__media" aria-hidden="true">
+          <img src="Images/6.jpg" alt="" decoding="async">
+        </div>
+      </div>
+    </section>
+
+  </main>
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+
+<section id="cs-contact-240">
+    <div class="cs-container">
+        <div class="cs-left-section">
+            <div class="cs-content">
+                <span class="cs-topper">Contact</span>
+                <h2 class="cs-title">Get in Touch</h2>
+                <p class="cs-text">
+                    We'd love to hear from you.
+Whether you have a question about our tea collections, gift sets, or wholesale orders, our team is here to help.
+Simply fill in the form and we'll get back to you as soon as possible.
+                </p>
+            </div>
+            <form id="cs-form-240" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-240" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label">
+                    Email
+                    <input class="cs-input" required type="text" id="email-240" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label">
+                    How Did You Find Us
+                    <input class="cs-input" type="text" id="find-240" name="find-us" placeholder="How did you find us?">
+                </label>
+                <label class="cs-label cs-label-message">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-240" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Contact us Now</button>
+            </form>
+        </div>
+        <div class="cs-right-section">
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg" alt="mail icon" class="cs-icon" width="36" height="36" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Email</span>
+                        <a href="woaini@zmf.com" class="cs-link">woaini@zmf.com</a>
+                    </div>
+                </li>
+        
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Address</span>
+                        <a href="" class="cs-link">0000 Woodbridge Lane, Melbourne Vic 3000</a>
+                    </div>
+                </li>
+            </ul>
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map.jpg">
+                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/map.jpg" alt="google map" width="462" height="438">
+            </picture>
+        </div>
+    </div>
+</section>
+                                
+
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1292">
+  <div class="cs-container">
+
+    <!-- Logo + intro + social icons -->
+    <div class="cs-logo-group">
+      <a aria-label="go back to home" class="cs-logo" href="">
+        <img class="cs-logo-img" src="Images/Logo.png" alt="logo" width="240" height="32">
+      </a>
+
+      <p class="cs-text">
+        We source premium tea leaves and create thoughtfully crafted blends for everyday enjoyment.
+      </p>
+
+      <!-- Social icons in footer -->
+      <div class="cs-social">
+        <a href="#" class="cs-social-link">
+          <img class="cs-social-icon" src="Images/tubiao6.svg" alt="Facebook" width="50" height="20">
+        </a>
+        <a href="#" class="cs-social-link">
+          <img class="cs-social-icon" src="Images/tubiao7.svg" alt="Twitter" width="50" height="20">
+        </a>
+      </div>
+    </div>
+
+    <!-- Links -->
+    <ul class="cs-nav">
+      <li class="cs-nav-li"><span class="cs-header">Services</span></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Tea Collections</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Gift Sets</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Corporate Orders</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Wholesale Supply</a></li>
+    </ul>
+
+    <ul class="cs-nav">
+      <li class="cs-nav-li"><span class="cs-header">About</span></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Our Story</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Sustainability</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Our Team</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Career</a></li>
+    </ul>
+
+    <ul class="cs-nav">
+      <li class="cs-nav-li"><span class="cs-header">Contact</span></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Facebook</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Instagram</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">LinkedIn</a></li>
+    </ul>
+
+    <ul class="cs-nav">
+      <li class="cs-nav-li"><span class="cs-header">Help</span></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">FAQ</a></li>
+      <li class="cs-nav-li"><a class="cs-nav-link" href="#">Contact us</a></li>
+    </ul>
+
+  </div>
+
+  <div class="cs-bottom">
+    <span class="cs-copyright">
+      Copyright© 2026.
+      <a class="cs-copyright-link" href="#">TTree.</a>
+      All Right Reserved.
+    </span>
+  </div>
+
+  <div class="cs-floater" aria-hidden="true"></div>
+</footer>
+
+                                
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
+
+                                
